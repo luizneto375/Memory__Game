@@ -18,6 +18,7 @@ justify-content: center;
 
 .login_header img {
     width: 50%;
+    margin-top: 40px;
 }
 
 .login_header h1 {
@@ -43,4 +44,6 @@ justify-content: center;
     border-radius: 8px;
     color: white;
     cursor: pointer;
+    width: 100%;
+    max-width: 200px;
 }
