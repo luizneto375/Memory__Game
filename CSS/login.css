@@ -51,4 +51,6 @@ justify-content: center;
 
 .login_button:disabled {
     background-color: #868585;
+    color: #1a1717;
+    cursor: auto;
 }
