@@ -1,11 +1,14 @@
 .grid {
      display: grid;
-     grid-template-columns: repeat(5, 1fr);
+     grid-template-columns: repeat(7, 1fr);
      gap: 1px;
      width: 100%;
      max-width: 800px;
      margin: 100px auto;
-     margin-left: 50px;
+    
+    
+     
+   
 }
 
 .card {
@@ -13,7 +16,8 @@
     width: 100%;
     position: relative;
     transition: all 400ms ease;
-    transform-style: preserve-3d;  
+    transform-style: preserve-3d; 
+    
 }
 
 .face {
@@ -23,10 +27,13 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    transition: all 2000ms ease;
+
 }
 
 .front {
     transform: rotateY(180deg);
+ 
 }
 
 .back {
@@ -36,4 +43,11 @@
 
 .reveal-card {
     transform: rotateY(180deg);
+    background-color: rgb(54, 54, 54);
+    border-radius: 50%;
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
 }

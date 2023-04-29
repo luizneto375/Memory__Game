@@ -9,12 +9,13 @@ const characters = [
     'im06',
     'im07',
     'im08',
-    'im09',
     'im10',
     'im11',
     'im12',
     'im13',
     'im14',
+    'im15',
+    
 ]
 
 const createElement = (tag, className) => {
@@ -27,8 +28,41 @@ const createElement = (tag, className) => {
 let firstCard = '';
 let secondCard = '';
 
-const checkCards = () => {
+const checkEndGame = () => {
+    const disabledcards = document.querySelectorAll('.disabled-card');
 
+    if (disabledcards.length === 28) {
+        alert('Parabéns, você conseguiu!')
+    }
+}
+
+const checkCards = () => {
+    const firstCharacter = firstCard.getAttribute('data-character');
+    const secondCharacter = secondCard.getAttribute('data-character');
+
+    if (firstCharacter === secondCharacter) {
+
+        firstCard.firstChild.classList.add('disabled-card');
+        secondCard.firstChild.classList.add('disabled-card');
+
+        firstCard = '';
+        secondCard = '';
+
+        checkEndGame();
+
+    } else {
+        setTimeout(() => {
+
+            firstCard.classList.remove('reveal-card');
+            secondCard.classList.remove('reveal-card');
+
+            firstCard = '';
+            secondCard = '';
+
+        }, 500)
+
+        
+    }
 }
 
 const revealCard = ({ target }) => {
