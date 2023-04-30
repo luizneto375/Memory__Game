@@ -65,7 +65,7 @@ const checkCards = () => {
     }
 }
 
-const revealCard = ({target}) => {
+const revealCard = ({ target }) => {
 
     if (target.parentNode.className.includes('reveal-card')) {
         return;
@@ -106,7 +106,7 @@ const createCard = (character) => {
 const loadGame = () => {
     const duplicateCharacters = [ ...characters, ...characters ];
 
-    const shuffledArray = duplicateCharacters.sort(() => Math.random()-0.5);
+    const shuffledArray = duplicateCharacters.sort(() => Math.random() - 0.5);
 
     shuffledArray.forEach((character) => {
         const card = createCard(character);
