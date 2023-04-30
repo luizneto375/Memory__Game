@@ -8,6 +8,15 @@
        
 }
 
+h1 {
+    background-color: black;
+}
+
+.nome {
+    background-color: aqua;
+    width: 500%;
+    height: 500%;
+}
 .card {
     aspect-ratio: 1/1;
     width: 100%;
