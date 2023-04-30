@@ -65,7 +65,7 @@ const checkCards = () => {
     }
 }
 
-const revealCard = ({ target }) => {
+const revealCard = ({target}) => {
 
     if (target.parentNode.className.includes('reveal-card')) {
         return;
@@ -83,8 +83,6 @@ const revealCard = ({ target }) => {
 
         checkCards();
     }
-
-   
 
 }
 
