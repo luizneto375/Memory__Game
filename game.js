@@ -90,7 +90,6 @@ const createCard = (character) => {
 
     const card = createElement('div', 'card');
     const front = createElement('div', 'face front');
-    const back = createElement('div', 'face back');
 
     front.style.backgroundImage = `url('/imagens/${character}.png')`;
 
