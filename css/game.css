@@ -3,6 +3,7 @@ main {
     flex-direction: column;
     width: 100%;
     min-height: 100%;
+    max-width: 500px;
     align-items: center;
     justify-content: center;
     background-color: black;
@@ -13,7 +14,7 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    max-width: 760px;
+    max-width: 500px;
     margin: 0 0 30px;
     background-color: rgb(113, 216, 113);
     border-radius: 50px;
