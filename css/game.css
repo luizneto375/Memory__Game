@@ -1,5 +1,5 @@
 body {
-    background-color: green;
+    background-color: black;
 }
 
 .grid {
@@ -8,7 +8,7 @@ body {
      gap: 1%;
      width: 100%;
      max-width: 800px;
-     margin: 35px 1px 1px 1px ;
+     margin: 10vh auto;
      
        
 }
@@ -20,7 +20,7 @@ body {
     height: 500%;
 }
 .card {
-    aspect-ratio: 1/1;
+    aspect-ratio: 5/5;
     width: 100%;
     position: relative;
     transition: all 400ms ease;
