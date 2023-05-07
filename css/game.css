@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .grid {
      display: grid;
      grid-template-columns: repeat(4, 1fr);
@@ -5,6 +9,7 @@
      width: 100%;
      max-width: 800px;
      margin: 100px auto;
+     
        
 }
 
