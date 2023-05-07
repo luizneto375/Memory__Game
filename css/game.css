@@ -40,7 +40,7 @@
 }
 
 .back {
-    background-image: url(/imagens/back.png);
+    background-image: url(../imagens/back.png);
     backface-visibility: hidden;  
 }
 
