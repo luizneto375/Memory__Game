@@ -1,6 +1,35 @@
-body {
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
     background-color: black;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 0 30px;
+    background-color: rgb(113, 216, 113);
+    border-radius: 50px;
+    
+}
+
+span {
+    color: rgb(2, 79, 2);
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 
 .grid {
      display: grid;
@@ -8,7 +37,7 @@ body {
      gap: 1%;
      width: 100%;
      max-width: 800px;
-     margin: 10vh auto;
+     margin: 0 auto;
      
        
 }
