@@ -6,11 +6,12 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100%;
-    max-width: 500px;
+    min-height: 320px;
+    max-width: 800px;
     align-items: center;
     justify-content: center;
     margin: auto;
+   
     
 }
 
@@ -19,7 +20,7 @@ header {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 0 30px;
     background-color: rgb(113, 216, 113);
     border-radius: 50px;
@@ -32,8 +33,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-   
-    
+  
 }
 
 
@@ -41,10 +41,14 @@ span {
      display: grid;
      grid-template-columns: repeat(7, 1fr);
      gap: 1%;
+     align-items: center;
+     justify-content: center;
      width: 100%;
+     min-height: 300px;
      max-width: 800px;
      height: 100%;
      margin: 0 auto;
+    
    
      
        
@@ -57,7 +61,7 @@ span {
     height: 500%;
 }
 .card {
-    aspect-ratio: 5/5;
+    aspect-ratio: 3/3;
     width: 100%;
     position: relative;
     transition: all 400ms ease;
@@ -97,10 +101,4 @@ span {
     opacity: 0.5;
 }
 
-@media screen {
-   main {
-    width: 100%;
-   height: 100vh;
-   }
 
-}
